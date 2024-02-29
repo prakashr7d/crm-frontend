@@ -9,11 +9,11 @@ RUN apt-get update && apt-get install -y git
 WORKDIR /usr/src/app
 
 # Clone your code from GitHub
-RUN git clone https://github.com/rooban33/crm-frontend .
+RUN git clone https://github.com/prakashr7d/crm-frontend .
 
 # Change to the cloned directory
 WORKDIR /usr/src/app/crm-frontend
-
+RUN git checkout new
 # Install production dependencies.
 RUN npm install --only=production
 
